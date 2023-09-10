@@ -28,7 +28,7 @@ function Dclock() {
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  let mainTime = `${hours}:${minutes}:${seconds}`;
+  let mainTime = `Hours: ${hours}: Minutes: ${minutes}: Seconds: ${seconds}`;
   document.querySelector("#time").innerText = mainTime;
   document.querySelector("small").innerHTML = timeFormat;
   setInterval(Dclock, 1000);
